@@ -16,30 +16,26 @@ import {
 export const ListOverViewDashBoard = [
   {
     id: 1,
-    title: 'Tổng doanh thu',
-    value: '23.543.000',
-    percent: '+20.1 %',
+    title: 'Số điểm thu gom hoạt động',
+    value: '232 điểm thu gom',
     icon: <DoanhThu />
   },
   {
     id: 2,
-    title: 'Tổng học sinh',
-    value: '+2350',
-    percent: '+180.1%',
+    title: 'Số tài khoản hoạt động',
+    value: '1.203 tài khoản',
     icon: <Student />
   },
   {
     id: 3,
-    title: 'Số học sinh mới',
-    value: '+43',
-    percent: '+19%',
+    title: 'Số đối tác tái chế',
+    value: '120 đối tác',
     icon: <StudentAdd />
   },
   {
     id: 4,
-    title: 'Lượt cần tư vấn mới',
-    value: '+573',
-    percent: '+201',
+    title: 'Tổng số giao dịch thanh toán',
+    value: '1.502 giao dịch',
     icon: <Advisory />
   }
 ];
@@ -58,9 +54,6 @@ export function OverViewTab() {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{item.value}</div>
-              <p className="text-xs text-muted-foreground">
-                {item.percent} so với tháng trước
-              </p>
             </CardContent>
           </Card>
         ))}
@@ -68,7 +61,7 @@ export function OverViewTab() {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-7">
         <Card className="col-span-4">
           <CardHeader>
-            <CardTitle>Tổng quan</CardTitle>
+            <CardTitle>Số giao dịch hàng tháng</CardTitle>
           </CardHeader>
           <CardContent className="pl-2">
             <Overview />
@@ -76,8 +69,10 @@ export function OverViewTab() {
         </Card>
         <Card className="col-span-4 md:col-span-3">
           <CardHeader>
-            <CardTitle>Danh sách cần tư vấn</CardTitle>
-            <CardDescription>Đang có 20 phụ huynh cần tư vấn</CardDescription>
+            <CardTitle>Top người dùng có điểm thưởng cao nhất</CardTitle>
+            <CardDescription>
+              Top 3 người dùng có điểm thưởng cao nhất
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <RecentSales />

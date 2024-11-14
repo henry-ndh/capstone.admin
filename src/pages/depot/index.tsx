@@ -1,11 +1,10 @@
-import StudentsTable from './components/students-table';
+import StudentsTable from './components/depot-table';
 import { useSearchParams } from 'react-router-dom';
 import BasePages from '@/components/shared/base-pages';
 import { useGetStudentPaging } from '@/queries/student.query';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import CollectorTable from './components/collector-table/index';
 
-export default function StudentPage() {
+export default function DepotPage() {
   const [searchParams] = useSearchParams();
   const page = Number(searchParams.get('page') || 1);
   const pageLimit = Number(searchParams.get('limit') || 10);
@@ -78,46 +77,21 @@ export default function StudentPage() {
       pageHead="Quản lý người dùng RCA"
       className="p-4 md:px-8"
     >
-      <Tabs defaultValue="user" className="space-y-4">
-        <TabsList>
-          <TabsTrigger value="user">Người dùng</TabsTrigger>
-          <TabsTrigger value="collector">Đối tác</TabsTrigger>
-        </TabsList>
-        <TabsContent value="user" className="space-y-4">
-          {users.length === 0 ? (
-            <StudentsTable
-              users={studentData}
-              page={page}
-              totalUsers={totalUsers}
-              pageCount={pageCount}
-            />
-          ) : (
-            <StudentsTable
-              users={users}
-              page={page}
-              totalUsers={totalUsers}
-              pageCount={pageCount}
-            />
-          )}
-        </TabsContent>
-        <TabsContent value="collector" className="space-y-4">
-          {users.length === 0 ? (
-            <CollectorTable
-              users={studentData}
-              page={page}
-              totalUsers={totalUsers}
-              pageCount={pageCount}
-            />
-          ) : (
-            <CollectorTable
-              users={users}
-              page={page}
-              totalUsers={totalUsers}
-              pageCount={pageCount}
-            />
-          )}
-        </TabsContent>
-      </Tabs>
+      {users.length === 0 ? (
+        <StudentsTable
+          users={studentData}
+          page={page}
+          totalUsers={totalUsers}
+          pageCount={pageCount}
+        />
+      ) : (
+        <StudentsTable
+          users={users}
+          page={page}
+          totalUsers={totalUsers}
+          pageCount={pageCount}
+        />
+      )}
     </BasePages>
   );
 }

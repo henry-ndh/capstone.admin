@@ -8,31 +8,31 @@ export const navItems: NavItem[] = [
     label: 'Dashboard'
   },
   {
-    title: 'Học sinh',
+    title: 'Người dùng',
     href: '/student',
     icon: 'user',
     label: 'Student'
   },
   {
-    title: 'Điểm danh',
+    title: 'Điểm thu gom',
     href: '/checkin-student',
     icon: 'clipboardCheck',
     label: 'Checkin'
   },
   {
-    title: 'Quản lý điểm danh',
+    title: 'Đối tác tái chế',
     href: '/checkin-manager',
     icon: 'notepadText',
     label: 'ManagerCheckin'
   },
   {
-    title: 'Tư vấn',
+    title: 'Báo cáo hoạt động',
     href: '/advisory',
     icon: 'phone',
     label: 'Advisory'
   },
   {
-    title: 'Quản lý doanh thu',
+    title: 'Quản lý thanh toán',
     href: '/revenue',
     icon: 'wallet',
     label: 'Revenue'

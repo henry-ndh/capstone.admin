@@ -25,7 +25,7 @@ export const columns: ColumnDef<Student>[] = [
   },
   {
     accessorKey: 'name',
-    header: 'Tên người dùng',
+    header: 'Tên đối tác',
     cell: (info) => info.getValue(),
     enableSorting: true
   },
@@ -42,7 +42,11 @@ export const columns: ColumnDef<Student>[] = [
   },
   {
     accessorKey: 'rewardPoint',
-    header: 'Số điểm thưởng'
+    header: 'Số điểm giao dịch'
+  },
+  {
+    accessorKey: 'rewardPoint',
+    header: 'Số giao dịch hoàn thành'
   },
   {
     accessorKey: 'status',
