@@ -118,15 +118,7 @@ export default function DataTable<TData, TValue>({
             className="w-1/3 rounded-md border px-4 py-2"
           />
         </div>
-        <div className="flex gap-3">
-          {showAdd && (
-            <PopupModal
-              renderModal={(onClose) => (
-                <StudentCreateForm modalClose={onClose} />
-              )}
-            />
-          )}
-        </div>
+        <div className="flex gap-3"></div>
       </div>
       <ScrollArea
         className={`h-[calc(${heightTable}-220px)] rounded-md border md:h-[calc(${heightTable}-80px)]`}

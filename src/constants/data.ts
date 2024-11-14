@@ -15,24 +15,18 @@ export const navItems: NavItem[] = [
   },
   {
     title: 'Điểm thu gom',
-    href: '/checkin-student',
+    href: '/depot',
     icon: 'clipboardCheck',
     label: 'Checkin'
   },
   {
-    title: 'Đối tác tái chế',
-    href: '/checkin-manager',
-    icon: 'notepadText',
-    label: 'ManagerCheckin'
-  },
-  {
     title: 'Báo cáo hoạt động',
-    href: '/advisory',
-    icon: 'phone',
+    href: '/report',
+    icon: 'notepadText',
     label: 'Advisory'
   },
   {
-    title: 'Quản lý thanh toán',
+    title: 'Quản lý giao dịch',
     href: '/revenue',
     icon: 'wallet',
     label: 'Revenue'

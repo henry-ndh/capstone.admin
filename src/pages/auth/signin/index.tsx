@@ -34,10 +34,8 @@ export default function SignInPage() {
         </div>
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
-            <p className="text-lg">
-              &ldquo;Happy Kids - Mầm non dành cho trẻ.&rdquo;
-            </p>
-            <footer className="text-sm">Nguyễn Đức Tuấn</footer>
+            <p className="text-lg">&ldquo;RCA.&rdquo;</p>
+            <footer className="text-sm">RCA</footer>
           </blockquote>
         </div>
       </div>
@@ -59,7 +57,7 @@ export default function SignInPage() {
             <a className="underline underline-offset-4 hover:text-primary">
               chính sách bảo mật
             </a>{' '}
-            của Happy Kids .
+            của RCA .
           </p>
         </div>
       </div>

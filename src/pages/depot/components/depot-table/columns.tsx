@@ -25,34 +25,32 @@ export const columns: ColumnDef<Student>[] = [
   },
   {
     accessorKey: 'name',
-    header: 'Tên người dùng',
+    header: 'Tên điểm thu gom',
     cell: (info) => info.getValue(),
     enableSorting: true
   },
   {
     accessorKey: 'address',
-    header: 'Địa chỉ'
+    header: 'Địa chỉ thu gom'
   },
   {
-    accessorKey: 'gender',
-    header: 'Giới tính',
-    cell: (info) => {
-      return info.getValue() ? 'Nam' : 'Nữ';
-    }
-  },
-  {
-    accessorKey: 'rewardPoint',
-    header: 'Số điểm thưởng'
+    accessorKey: 'completedTransactions',
+    header: 'Số giao dịch'
   },
   {
     accessorKey: 'status',
     header: 'Trạng thái hoạt động'
   },
   {
+    accessorKey: 'time',
+    header: 'Thời gian hoạt động'
+  },
+  {
     accessorKey: 'joinAt',
     header: 'Ngày tham gia',
     cell: (info) => helper.convertToDate(info.getValue())
   },
+
   {
     id: 'actions',
     cell: ({ row }) => <CellAction data={row.original} />

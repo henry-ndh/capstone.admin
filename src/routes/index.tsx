@@ -16,6 +16,8 @@ const StudentDetailPage = lazy(
 const CheckInPage = lazy(() => import('@/pages/checkin'));
 const CheckInManagerPage = lazy(() => import('@/pages/checkin-manager'));
 const RevenuePage = lazy(() => import('@/pages/revenue'));
+const DepotPage = lazy(() => import('@/pages/depot'));
+const ReportPage = lazy(() => import('@/pages/report'));
 // ----------------------------------------------------------------------
 
 export default function AppRouter() {
@@ -47,15 +49,15 @@ export default function AppRouter() {
           element: <FormPage />
         },
         {
-          path: 'advisory',
-          element: <AdvisoryPage />
+          path: 'report',
+          element: <ReportPage />
         },
         {
-          path: 'checkin-student',
-          element: <CheckInPage />
+          path: 'depot',
+          element: <DepotPage />
         },
         {
-          path: 'checkin-manager',
+          path: 'collector',
           element: <CheckInManagerPage />
         },
         {

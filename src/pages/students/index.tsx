@@ -73,7 +73,7 @@ export default function StudentPage() {
     <BasePages
       breadcrumbs={[
         { title: 'Trang chủ', link: '/' },
-        { title: 'Học sinh', link: '/student' }
+        { title: 'Người dùng', link: '/student' }
       ]}
       pageHead="Quản lý người dùng RCA"
       className="p-4 md:px-8"

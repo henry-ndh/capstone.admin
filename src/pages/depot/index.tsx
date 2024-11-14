@@ -18,52 +18,62 @@ export default function DepotPage() {
   const studentData = [
     {
       id: 1,
-      name: 'Nguyễn Thị A',
+      name: 'Điểm thu gom A',
       address: 'Tòa 502A Vinhomes',
       gender: true, // Nam
       rewardPoint: 2012,
       completedTransactions: 150,
       status: 'Hoạt động',
+      time: '7:00 - 21:00',
+
       joinAt: '2023-01-15'
     },
     {
       id: 2,
-      name: 'Trần Văn B',
+      name: 'Điểm thu gom B',
       address: 'Tòa 15B Time City',
       gender: true, // Nam
       rewardPoint: 1850,
       completedTransactions: 120,
       status: 'Hoạt động',
+
+      time: '7:00 - 21:00',
       joinAt: '2022-12-01'
     },
     {
       id: 3,
-      name: 'Lê Thị C',
+      name: 'Điểm thu gom C',
       address: 'Số 20A Park Hill',
       gender: false, // Nữ
       rewardPoint: 1705,
       completedTransactions: 130,
       status: 'Ngưng hoạt động',
+      time: '7:00 - 21:00',
+
       joinAt: '2022-05-20'
     },
     {
       id: 4,
-      name: 'Phạm Văn D',
+      name: 'Điểm thu gom D',
       address: 'Chung cư Royal City',
       gender: true, // Nam
       rewardPoint: 1550,
       completedTransactions: 90,
       status: 'Hoạt động',
+      time: '7:00 - 21:00',
+
       joinAt: '2021-09-10'
     },
     {
       id: 5,
-      name: 'Vũ Thị E',
+      name: 'Điểm thu gom E',
       address: 'Tòa 7A Vincom Center',
       gender: false, // Nữ
       rewardPoint: 1400,
       completedTransactions: 80,
       status: 'Ngưng hoạt động',
+      time: '7:00 - 21:00',
+
       joinAt: '2020-11-23'
     }
   ];
@@ -72,9 +82,9 @@ export default function DepotPage() {
     <BasePages
       breadcrumbs={[
         { title: 'Trang chủ', link: '/' },
-        { title: 'Học sinh', link: '/student' }
+        { title: 'Điểm thu gom', link: '/student' }
       ]}
-      pageHead="Quản lý người dùng RCA"
+      pageHead="Quản lý điểm thu gom RCA"
       className="p-4 md:px-8"
     >
       {users.length === 0 ? (
