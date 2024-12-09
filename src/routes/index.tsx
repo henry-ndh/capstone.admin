@@ -9,15 +9,9 @@ const DashboardLayout = lazy(
 const SignInPage = lazy(() => import('@/pages/auth/signin'));
 const DashboardPage = lazy(() => import('@/pages/dashboard'));
 const StudentPage = lazy(() => import('@/pages/students'));
-const AdvisoryPage = lazy(() => import('@/pages/advisory'));
 const StudentDetailPage = lazy(
   () => import('@/pages/students/StudentDetailPage')
 );
-const CheckInPage = lazy(() => import('@/pages/checkin'));
-const CheckInManagerPage = lazy(() => import('@/pages/checkin-manager'));
-const RevenuePage = lazy(() => import('@/pages/revenue'));
-const DepotPage = lazy(() => import('@/pages/depot'));
-const ReportPage = lazy(() => import('@/pages/report'));
 // ----------------------------------------------------------------------
 
 export default function AppRouter() {
@@ -47,22 +41,6 @@ export default function AppRouter() {
         {
           path: 'form',
           element: <FormPage />
-        },
-        {
-          path: 'report',
-          element: <ReportPage />
-        },
-        {
-          path: 'depot',
-          element: <DepotPage />
-        },
-        {
-          path: 'collector',
-          element: <CheckInManagerPage />
-        },
-        {
-          path: 'revenue',
-          element: <RevenuePage />
         }
       ]
     }
